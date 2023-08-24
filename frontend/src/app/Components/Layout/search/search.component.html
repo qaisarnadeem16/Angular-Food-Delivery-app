@@ -1,0 +1,6 @@
+<div class="flex justify-center py-10 w-full">
+<div class="flex  items-center border border-gray-700 pl-3  rounded-full    ">
+    <input #s type="text" placeholder="search food mine" (key.enter)="search(s.value)" [value]="searchTerm" class=" py-3 focus:outline-none  "/>
+    <button class="py-3 px-4 bg-red-500 rounded-full text-white text-center" (click)="search(s.value)">Search</button> 
+</div>
+</div>

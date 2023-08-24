@@ -1,0 +1,6 @@
+<div class="flex justify-center items-center py-2 gap-5 text-black" *ngIf="tags">
+    <a *ngFor="let tag of tags" [routerLink]="'/tag/' + tag.name" class="hover:scale-105 transition-all duration-300 bg-gray-200 rounded-full px-3 py-1">
+      {{ tag.name }} ({{ tag.count }})
+    </a>
+  </div>
+  
